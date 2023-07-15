@@ -3,25 +3,392 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --Dourado: #d9af62;
+  /* Cor principal: cabeçalho, botões de destaque ou elementos de destaque para chamar a atenção do usuário. */
+  --Verde-azulado: #4d8a8c;
+  /* Cor de destaque: elementos importantes do site, como links, ícones ou títulos. Ele adiciona um toque de frescor e destaque aos elementos. */
+  --Azul-turquesa: #6cd5d9;
+  /* Cor de fundo: fundo de seções do site, como blocos de conteúdo ou áreas de destaque. Essa cor cria uma sensação de calma e tranquilidade. */
+  --Azul-marinho: #39318c;
+  /* Cor secundária: para complementar as outras cores. Você pode aplicá-la em botões secundários, barra de navegação ou elementos de destaque adicionais. */
+  --Azul-violeta: #6257d9;
+  /* Cor de acento: para chamar a atenção do usuário para elementos específicos, como links selecionados, ícones de ação ou partes interativas do site. */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  text-align: center;
 }
+
+/* Regras gerais dos grids pais das paletas */
+.hr-Quadros {
+  width: 70%;
+}
+
+/* - - - - A estilização dos quadros das paletas começa aqui! - - - */
+.quadro-paletas-Um,
+.quadro-paletas-Dois,
+.quadro-paletas-Tres,
+.quadro-paletas-Quatro {
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 0.2rem;
+  padding: 0.1rem;
+}
+
+/* - - - - - - - - - - -  - - - - - - - quadro-paletas-Um - - - - - - - - - - -  - - - - - - - */
+/* - - - - A estilização da paleta cor Claro do windows 10! - - - */
+.paletaWin10ClaroCorUm,
+.paletaWin10ClaroCorDois,
+.paletaWin10ClaroCorTres,
+.paletaWin10ClaroCorQuatro,
+.paletaWin10ClaroCorCinco,
+.paletaWin10ClaroCorSeis {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paletaWin10ClaroCorUm {
+  background-color: #ffffff;
+}
+
+.paletaWin10ClaroCorDois {
+  background-color: #eeeeee;
+}
+
+.paletaWin10ClaroCorTres {
+  background-color: #e6e6e6;
+}
+
+.paletaWin10ClaroCorQuatro {
+  background-color: #303030;
+}
+
+.paletaWin10ClaroCorCinco {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.paletaWin10ClaroCorSeis {
+  background-color: #0078d7;
+}
+
+/* - - - - A estilização da paleta cor Escuro do windows 10! - - - */
+.paletaWin10EscuroCorUm,
+.paletaWin10EscuroCorDois,
+.paletaWin10EscuroCorTres,
+.paletaWin10EscuroCorQuatro,
+.paletaWin10EscuroCorCinco,
+.paletaWin10EscuroCorSeis {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paletaWin10EscuroCorUm {
+  background-color: #1f1f1f;
+}
+
+.paletaWin10EscuroCorDois {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.paletaWin10EscuroCorTres {
+  background-color: #101010;
+  color: #ffffff;
+}
+
+.paletaWin10EscuroCorQuatro {
+  background-color: #3f3f3f;
+}
+
+.paletaWin10EscuroCorCinco {
+  background-color: #ffffff;
+}
+
+.paletaWin10EscuroCorSeis {
+  background-color: #0078d7;
+}
+
+/* - - - - - - - - - - -  - - - - - - - quadro-paletas-Dois - - - - - - - - - - -  - - - - - - - */
+/* Paleta do google começa aqui */
+.paletaGoogleCorUm,
+.paletaGoogleCorDois,
+.paletaGoogleCorTres,
+.paletaGoogleCorQuatro {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paletaGoogleCorUm {
+  background-color: #4285f4;
+}
+
+.paletaGoogleCorDois {
+  background-color: #db4437;
+}
+
+.paletaGoogleCorTres {
+  background-color: #f4b400;
+}
+
+.paletaGoogleCorQuatro {
+  background-color: #0f9d58;
+}
+
+/* Paleta de cores da Microsoft começa aqui */
+.paletaMicrosoftCorUM,
+.paletaMicrosoftCorDois,
+.paletaMicrosoftCorTres,
+.paletaMicrosoftCorQuatro,
+.paletaMicrosoftCorCinco {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paletaMicrosoftCorUM {
+  background-color: #f25022;
+}
+
+.paletaMicrosoftCorDois {
+  background-color: #7fba00;
+}
+
+.paletaMicrosoftCorTres {
+  background-color: #00a4ef;
+}
+
+.paletaMicrosoftCorQuatro {
+  background-color: #ffb900;
+}
+
+.paletaMicrosoftCorCinco {
+  background-color: #737373;
+}
+
+/* Paleta do Android começa aqui */
+.paletaAndroidCorUm {
+  background-color: #78c257;
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+/* paleta da Apple começa aqui*/
+.paletaAppleCorUm {
+  background-color: #000000;
+  color: #ffffff;
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+/* - - - - - - - - - - -  - - - - - - - quadro-paletas-Tres - - - - - - - - - - -  - - - - - - - */
+/*  A paleta de Coca Cola começa aqui */
+.paleta-CocaColaCorUm,
+.paleta-CocaColaCorDois {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-CocaColaCorUm {
+  background-color: #f40009;
+}
+
+.paleta-CocaColaCorDois {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/*  A paleta de Monster começa aqui */
+.paleta-MosterCorUm,
+.paleta-MosterCorDois {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-MosterCorUm {
+  background-color: #95d600;
+}
+
+.paleta-MosterCorDois {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*  A paleta de Red Bull começa aqui */
+.paleta-RedBullCorUm,
+.paleta-RedBullCorDois {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-RedBullCorUm {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.paleta-RedBullCorDois {
+  background-color: #ffcc00;
+}
+
+/*  A paleta de Sprite começa aqui */
+.paleta-SpriteCorUm,
+.paleta-SpriteCorDois,
+.paleta-SpriteCorTres {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-SpriteCorUm {
+  background-color: #008b47;
+}
+
+.paleta-SpriteCorDois {
+  background-color: #f8cd24;
+}
+
+.paleta-SpriteCorTres {
+  background-color: #6bb64a;
+}
+
+/* - - - - - - - - - - -  - - - - - - - quadro-paletas-Quatro - - - - - - - - - - -  - - - - - - - */
+/* A paleta do spotify começa aqui */
+.paleta-SpotifyCorUm,
+.paleta-SpotifyCorDois,
+.paleta-SpotifyCorTres {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-SpotifyCorUm {
+  background-color: #1db954;
+}
+
+.paleta-SpotifyCorDois {
+  border: solid 1px #000000;
+  background-color: #ffffff;
+}
+
+.paleta-SpotifyCorTres {
+  background-color: #191414;
+  color: #ffffff;
+}
+
+/* A paleta do YouTube começa aqui*/
+.paleta-YouTubeCorUm,
+.paleta-YouTubeCorDois,
+.paleta-YouTubeCorTres {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-YouTubeCorUm {
+  background-color: #ff0000;
+}
+
+.paleta-YouTubeCorDois {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.paleta-YouTubeCorTres {
+  border: solid 1px #000000;
+  background-color: #ffffff;
+}
+
+/* A paleta do whatsapp começa aqui*/
+.paleta-WhatsappCorUm,
+.paleta-WhatsappCorDois,
+.paleta-WhatsappCorTres,
+.paleta-WhatsappCorQuatro {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-WhatsappCorUm {
+  background-color: #128c7e;
+}
+
+.paleta-WhatsappCorDois {
+  background-color: #075e54;
+}
+
+.paleta-WhatsappCorTres {
+  background-color: #25d366;
+}
+
+.paleta-WhatsappCorQuatro {
+  background-color: #34b7f1;
+}
+
+/* A paleta do instagram começa aqui*/
+.paleta-InstagramCorUm,
+.paleta-InstagramCorDois,
+.paleta-InstagramCorTres,
+.paleta-InstagramCorQuatro,
+.paleta-InstagramCorCinco,
+.paleta-InstagramCorSeis,
+.paleta-InstagramCorSete,
+.paleta-InstagramCorOito,
+.paleta-InstagramCorNove,
+.paleta-InstagramCorDez {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2% 25%;
+}
+
+.paleta-InstagramCorUm {
+  background-color: #405de6;
+}
+
+.paleta-InstagramCorDois {
+  background-color: #5b51d8;
+}
+
+.paleta-InstagramCorTres {
+  background-color: #833ab4;
+}
+
+.paleta-InstagramCorQuatro {
+  background-color: #c13584;
+}
+
+.paleta-InstagramCorCinco {
+  background-color: #e1306c;
+}
+
+.paleta-InstagramCorSeis {
+  background-color: #fd1d1d;
+}
+
+.paleta-InstagramCorSete {
+  background-color: #f56040;
+}
+
+.paleta-InstagramCorOito {
+  background-color: #f77737;
+}
+
+.paleta-InstagramCorNove {
+  background-color: #fcaf45;
+}
+
+.paleta-InstagramCorDez {
+  background-color: #ffdc80;
+}
+
+/*            AQUI PRA BAIXO                                            */
